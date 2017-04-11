@@ -8,3 +8,5 @@ RUN chmod +x /app/get-unity.sh && \
     /app/get-unity.sh && \
     dpkg -i /app/unity_editor.deb && \
     rm /app/unity_editor.deb
+ADD unity_wrapper.sh /usr/local/bin/unity_wrapper.sh
+RUN chmod +x /usr/local/bin/unity_wrapper.sh
