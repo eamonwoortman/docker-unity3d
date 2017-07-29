@@ -20,7 +20,7 @@ WORKDIR $HOME
    
 # create nessesary folders for Unity and move some scripts around
 RUN mkdir -p /home/unity/.cache/unity3d && mkdir -p /home/unity/share/unity3d && sudo chmod -R +x /app \ 
-    && sudo mv /app/xvfb /etc/init.d/xvfb && sudo mv /app/unity-wrapper.sh /usr/local/bin/unity-wrapper.sh \
+    && sudo mv /app/unity-wrapper.sh /usr/local/bin/unity-wrapper.sh \
      && sudo chown unity:unity /app 
  
 # download and install the Unity editor
